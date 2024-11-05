@@ -17,4 +17,5 @@ def get_games():
     return games
 
 
-print(get_games())
+if __name__ == '__main__':
+    print(get_games())

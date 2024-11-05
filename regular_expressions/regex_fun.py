@@ -44,6 +44,7 @@ def match_first_paragraph(html=HTML):
     return re.findall(r"^(<p>)(.*?)(</p>)", html)[0][1]
 
 
-print(extract_course_times())
-print(get_all_hashtags_and_links())
-print(match_first_paragraph())
+if __name__ == '__main__':
+    print(extract_course_times())
+    print(get_all_hashtags_and_links())
+    print(match_first_paragraph())

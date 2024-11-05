@@ -26,5 +26,7 @@ def get_models(automaker, year):
             result_set.add(dictionary["model"])
     return result_set
 
-print(most_prolific_automaker(1999))
-print(get_models("Chrysler", 2002))
+
+if __name__ == '__main__':
+    print(most_prolific_automaker(1999))
+    print(get_models("Chrysler", 2002))

@@ -36,4 +36,5 @@ def get_us_bank_holidays(content=content):
     return holidays
 
 
-print(get_us_bank_holidays(content))
+if __name__ == '__main__':
+    print(get_us_bank_holidays(content))

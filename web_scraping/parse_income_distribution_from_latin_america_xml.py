@@ -33,4 +33,5 @@ def get_income_distribution(xml=countries):
     return income_dict
 
 
-print(get_income_distribution())
+if __name__ == '__main__':
+    print(get_income_distribution())

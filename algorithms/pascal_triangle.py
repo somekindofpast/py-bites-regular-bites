@@ -21,4 +21,5 @@ def pascal(N: int) -> List[int]:
     return triangle[N - 1][1:-1]
 
 
-print(f"Result: {pascal(5)}")
+if __name__ == '__main__':
+    print(f"Result: {pascal(5)}")

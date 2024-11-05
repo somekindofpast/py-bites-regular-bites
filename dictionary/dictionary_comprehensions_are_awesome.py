@@ -30,11 +30,12 @@ def filter_bites(
     return { k:v for (k,v) in zip(bites.keys(), bites.values()) if k not in bites_done }
 
 
-bites = {
-        26: "Dictionary comprehensions are awesome",
-        15: "Enumerate 2 sequences",
-        21: "Query a nested data structure",
-        105: "Slice and dice",
-    }
-excluded_bites = {21, 105}
-print(filter_bites(bites, excluded_bites))
+if __name__ == '__main__':
+    bites = {
+            26: "Dictionary comprehensions are awesome",
+            15: "Enumerate 2 sequences",
+            21: "Query a nested data structure",
+            105: "Slice and dice",
+        }
+    excluded_bites = {21, 105}
+    print(filter_bites(bites, excluded_bites))

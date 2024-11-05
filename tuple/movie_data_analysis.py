@@ -56,13 +56,14 @@ def get_average_scores(directors):
     return sorted(director_averages, key=lambda tup: tup[1], reverse=True)
 
 
-movies_ = get_movies_by_director()
-print(movies_["Lowell Sherman"]) # should be empty
+if __name__ == '__main__':
+    movies_ = get_movies_by_director()
+    print(movies_["Lowell Sherman"]) # should be empty
 
-print(movies_["Frank Capra"])
-print(calc_mean_score(movies_["Frank Capra"]))
+    print(movies_["Frank Capra"])
+    print(calc_mean_score(movies_["Frank Capra"]))
 
-print(movies_["Christopher Nolan"])
-print(calc_mean_score(movies_["Christopher Nolan"]))
+    print(movies_["Christopher Nolan"])
+    print(calc_mean_score(movies_["Christopher Nolan"]))
 
-print(get_average_scores(movies_))
+    print(get_average_scores(movies_))

@@ -18,6 +18,7 @@ def uppercase_vowels(text: str) -> str:
     return result
 
 
-print(uppercase_vowels("data.jpg foul"))
-print(uppercase_vowels("-,.?~a"))
-print(uppercase_vowels("what is file.pdf"))
+if __name__ == '__main__':
+    print(uppercase_vowels("data.jpg foul"))
+    print(uppercase_vowels("-,.?~a"))
+    print(uppercase_vowels("what is file.pdf"))

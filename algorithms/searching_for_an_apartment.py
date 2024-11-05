@@ -24,4 +24,6 @@ def search_apartment(buildings: List[int], direction: str) -> List[int]:
             highest = buildings[i]
     return result
 
-print(search_apartment([3, 5, 4, 3, 3, 1], WEST))
+
+if __name__ == '__main__':
+    print(search_apartment([3, 5, 4, 3, 3, 1], WEST))

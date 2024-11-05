@@ -10,4 +10,5 @@ def count_indents(text: str) -> int:
     return count
 
 
-print(count_indents('            string'))
+if __name__ == '__main__':
+    print(count_indents('            string'))

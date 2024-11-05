@@ -14,6 +14,7 @@ def filter_names(names):
     return results
 
 
-print(filter_names(['bob', 'berta']))
-print(filter_names(['t2im', '1quinton', 'ana', '4']))
-print(filter_names(['tim', 'quinton', 'ana']))
+if __name__ == '__main__':
+    print(filter_names(['bob', 'berta']))
+    print(filter_names(['t2im', '1quinton', 'ana', '4']))
+    print(filter_names(['tim', 'quinton', 'ana']))

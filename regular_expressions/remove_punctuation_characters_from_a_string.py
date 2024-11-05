@@ -5,4 +5,5 @@ def remove_punctuation(input_string):
     return re.sub('[!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~]', '', input_string)
 
 
-print(remove_punctuation(';String. with. punctuation characters!'))
+if __name__ == '__main__':
+    print(remove_punctuation(';String. with. punctuation characters!'))

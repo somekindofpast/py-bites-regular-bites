@@ -18,4 +18,5 @@ def gen_key(parts: int = 4, chars_per_part: int = 8) -> str:
     return "-".join(["".join(choices(selection, k=chars_per_part)) for i in range(parts)])
 
 
-print(gen_key(2, 5))
+if __name__ == '__main__':
+    print(gen_key(2, 5))

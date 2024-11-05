@@ -28,7 +28,8 @@ def make_changes(n: int, coins: List[int]) -> int:
     return result
 
 
-british = [1, 2, 5, 10, 20, 50]
-usa = [1, 5, 10, 25, 50]
+if __name__ == '__main__':
+    british = [1, 2, 5, 10, 20, 50]
+    usa = [1, 5, 10, 25, 50]
 
-print(make_changes(20, british))
+    print(make_changes(20, british))

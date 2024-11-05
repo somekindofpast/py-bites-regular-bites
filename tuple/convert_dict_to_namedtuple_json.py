@@ -21,4 +21,5 @@ def nt2json(nt):
     return json.dumps(dict(nt._asdict()), indent=4, sort_keys=True, default=str)
 
 
-print(nt2json(dict2nt(blog)))
+if __name__ == '__main__':
+    print(nt2json(dict2nt(blog)))

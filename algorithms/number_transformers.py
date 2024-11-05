@@ -37,4 +37,5 @@ def num_ops(n):
         attempts = attempts_next
 
 
-print(num_ops(3012))
+if __name__ == '__main__':
+    print(num_ops(3012))

@@ -8,8 +8,9 @@ def sort_words_case_insensitively(words):
     return sorted(not_nums, key=str.casefold) + (sorted(nums))
 
 
-words = ("Andrew Carnegie's 64-room chateau at 2 East 91st "
-             "Street was converted into the Cooper-Hewitt National "
-             "Design Museum of the Smithsonian Institution "
-             "in the 1970's").split()
-print(sort_words_case_insensitively(words))
+if __name__ == '__main__':
+    words = ("Andrew Carnegie's 64-room chateau at 2 East 91st "
+                 "Street was converted into the Cooper-Hewitt National "
+                 "Design Museum of the Smithsonian Institution "
+                 "in the 1970's").split()
+    print(sort_words_case_insensitively(words))

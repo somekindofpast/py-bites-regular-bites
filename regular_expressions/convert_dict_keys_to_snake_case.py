@@ -25,17 +25,18 @@ def format_key(key: str) -> str:
     return key
 
 
-stuff = {
-        "darthVader": {
-            "firstName22": "Anakin",
-            "lastName": "Skywalker",
-            "appearance": {
-                "helmetColor": "black",
-                "armorColor": "black",
-                "capeColor": "black",
-            },
+if __name__ == '__main__':
+    stuff = {
+            "darthVader": {
+                "firstName22": "Anakin",
+                "lastName": "Skywalker",
+                "appearance": {
+                    "helmetColor": "black",
+                    "armorColor": "black",
+                    "capeColor": "black",
+                },
+            }
         }
-    }
 
-print(snake_case_keys(stuff))
+    print(snake_case_keys(stuff))
 

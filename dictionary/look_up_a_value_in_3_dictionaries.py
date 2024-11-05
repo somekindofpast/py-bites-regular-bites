@@ -23,6 +23,7 @@ def get_person_age(name):
     return result
 
 
-print(get_person_age("aNA"))
-print(get_person_age("THOmas"))
-print(get_person_age(2))
+if __name__ == '__main__':
+    print(get_person_age("aNA"))
+    print(get_person_age("THOmas"))
+    print(get_person_age(2))

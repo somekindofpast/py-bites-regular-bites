@@ -36,4 +36,5 @@ def get_top_books(content=None):
     return [(k, v) for k, v in book_counter.items() if v >= MIN_COUNT]
 
 
-print(get_top_books())
+if __name__ == '__main__':
+    print(get_top_books())

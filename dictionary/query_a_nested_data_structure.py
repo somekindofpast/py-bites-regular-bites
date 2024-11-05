@@ -58,7 +58,8 @@ def sort_car_models(cars: CarsType = cars) -> CarsType:
     return result_dict
 
 
-print(get_all_jeeps())
-print(get_first_model_each_manufacturer())
-print(get_all_matching_models(grep='CO'))
-print(sort_car_models())
+if __name__ == '__main__':
+    print(get_all_jeeps())
+    print(get_first_model_each_manufacturer())
+    print(get_all_matching_models(grep='CO'))
+    print(sort_car_models())

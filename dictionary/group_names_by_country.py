@@ -31,4 +31,6 @@ def group_names_by_country(_data: str = data) -> defaultdict:
             countries[items[2]] = [value]
     return countries
 
-print(group_names_by_country())
+
+if __name__ == '__main__':
+    print(group_names_by_country())

@@ -39,4 +39,5 @@ def get_harry_most_common_word() -> Tuple[int, int]:
     return counter.most_common(1)[0]
 
 
-print(get_harry_most_common_word())
+if __name__ == '__main__':
+    print(get_harry_most_common_word())

@@ -100,16 +100,18 @@ def find_next_num_up(grid, row: int, col: int, next_num: int) -> bool:
             return True
     return False
 
-small_grid = """
-21 - 22 - 23 - 24 - 25
- |
-20    7 -  8 -  9 - 10
- |    |              |
-19    6    1 -  2   11
- |    |         |    |
-18    5 -  4 -  3   12
- |                   |
-17 - 16 - 15 - 14 - 13
-"""
 
-print_sequence_route(small_grid)
+if __name__ == '__main__':
+    small_grid = """
+    21 - 22 - 23 - 24 - 25
+     |
+    20    7 -  8 -  9 - 10
+     |    |              |
+    19    6    1 -  2   11
+     |    |         |    |
+    18    5 -  4 -  3   12
+     |                   |
+    17 - 16 - 15 - 14 - 13
+    """
+
+    print_sequence_route(small_grid)

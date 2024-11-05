@@ -14,4 +14,5 @@ def print_pattern(pattern: str, repetition: int):
     print(pattern * repetition)
 
 
-create_chessboard()
+if __name__ == '__main__':
+    create_chessboard()

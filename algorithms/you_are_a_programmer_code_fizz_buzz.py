@@ -12,4 +12,6 @@ def fizzbuzz(num: int) -> Union[str, int]:
     else:
         return num
 
-print(fizzbuzz(5))
+
+if __name__ == '__main__':
+    print(fizzbuzz(5))

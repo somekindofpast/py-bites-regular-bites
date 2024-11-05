@@ -24,4 +24,5 @@ def recur(number, base, power) -> int:
         return int(number % (base ** power))
 
 
-print(dec_to_base(7, 2))
+if __name__ == '__main__':
+    print(dec_to_base(7, 2))

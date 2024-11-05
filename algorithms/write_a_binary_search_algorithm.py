@@ -22,11 +22,13 @@ def recur(sequence, start, end, target):
             return None
         return recur(sequence, start, mid - 1, target)
 
-print(binary_search(PRIMES, 2))
-print(binary_search(PRIMES, 59))
-print(binary_search(PRIMES, 5))
-print(binary_search(PRIMES, 61))
-print(binary_search(PRIMES, 18))
-print(binary_search(ALPHABET, 'u'))
-print(binary_search(ALPHABET, 'a'))
-print(binary_search(ALPHABET, 'z'))
+
+if __name__ == '__main__':
+    print(binary_search(PRIMES, 2))
+    print(binary_search(PRIMES, 59))
+    print(binary_search(PRIMES, 5))
+    print(binary_search(PRIMES, 61))
+    print(binary_search(PRIMES, 18))
+    print(binary_search(ALPHABET, 'u'))
+    print(binary_search(ALPHABET, 'a'))
+    print(binary_search(ALPHABET, 'z'))

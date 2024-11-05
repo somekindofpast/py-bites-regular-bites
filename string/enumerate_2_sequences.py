@@ -14,4 +14,6 @@ def enumerate_names_countries():
     for i in range(len(names)):
         print('{}. {}{}{}'.format(i + 1, names[i], ' ' * (11 - len(names[i])), countries[i]))
 
-enumerate_names_countries()
+
+if __name__ == '__main__':
+    enumerate_names_countries()

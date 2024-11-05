@@ -7,4 +7,5 @@ def generate_affiliation_link(url: str):
     return result + "/?tag=pyb0f-20"
 
 
-print(generate_affiliation_link("https://www.amazon.co.uk/Pragmatic-Programmer-Andrew-Hunt/dp/020161622X"))
+if __name__ == '__main__':
+    print(generate_affiliation_link("https://www.amazon.co.uk/Pragmatic-Programmer-Andrew-Hunt/dp/020161622X"))

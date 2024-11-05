@@ -26,4 +26,5 @@ def get_book():
     return Book(title, description, image, link)
 
 
-print(get_book())
+if __name__ == '__main__':
+    print(get_book())

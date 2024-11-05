@@ -27,6 +27,7 @@ def wc(file_):
     return ' '.join([str(len(lines)), str(words), str(chars)])
 
 
-print(wc(harry_file))
+if __name__ == '__main__':
+    print(wc(harry_file))
 
 

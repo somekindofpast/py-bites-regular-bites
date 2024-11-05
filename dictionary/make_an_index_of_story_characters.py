@@ -97,4 +97,5 @@ def name_occurrence_in_line(synonyms, line: str) -> str:
     return ''
 
 
-print(make_character_index(the_neetle_tree, characters_neetle_tree))
+if __name__ == '__main__':
+    print(make_character_index(the_neetle_tree, characters_neetle_tree))

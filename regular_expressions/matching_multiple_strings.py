@@ -21,6 +21,8 @@ def contains_digits(input_str):
        one or more digits."""
     return False if re.findall('[0-9]', input_str) == [] else True
 
-print(contains_only_vowels('AE123'))
-print(contains_any_py_chars('america'))
-print(contains_digits('am3rica'))
+
+if __name__ == '__main__':
+    print(contains_only_vowels('AE123'))
+    print(contains_any_py_chars('america'))
+    print(contains_digits('am3rica'))

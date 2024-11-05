@@ -21,4 +21,6 @@ def get_pybites_top_tags(n=10):
        data already loaded into the content variable"""
     return Counter(re.findall(r"<category>(.*?)</category>", content.splitlines()[1])).most_common(n)
 
-print(get_pybites_top_tags(10))
+
+if __name__ == '__main__':
+    print(get_pybites_top_tags(10))

@@ -36,4 +36,5 @@ def find_all_solutions(operator_path: List[str], expected_result: int) -> Union[
     return solutions
 
 
-print(find_all_solutions(["+", "*", "*", "+", "*", "-"], 528))
+if __name__ == '__main__':
+    print(find_all_solutions(["+", "*", "*", "+", "*", "-"], 528))

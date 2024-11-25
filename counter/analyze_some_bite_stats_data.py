@@ -15,7 +15,7 @@ class BiteStats:
 
     def __init__(self, data=DATA):
         self.rows = []
-        with open(DATA, newline='', encoding='UTF-8') as csvfile:
+        with open(data, newline='', encoding='UTF-8') as csvfile:
             self.rows = list(DictReader(csvfile))
 
     @property

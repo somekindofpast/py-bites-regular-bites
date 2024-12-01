@@ -30,10 +30,10 @@ def create_user_bar_chart(content):
 
 
     for item in sorted(counter.items()):
-        space_num = max_len - len(item[0]) + 1
+        space_num = max_len - len(item[0])
         spaces = ''.join(' ' * space_num)
         plus_signs = ''.join('+' * int(item[1]))
-        print(f"{item[0]}{spaces}| {plus_signs}")
+        print(f"{item[0]}{spaces} | {plus_signs}")
 
 
 if __name__ == '__main__':

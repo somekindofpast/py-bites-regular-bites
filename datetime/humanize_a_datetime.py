@@ -27,12 +27,11 @@ def pretty_date(date):
     time_delta = NOW - date
     delta_seconds = time_delta.days * DAY + time_delta.seconds
 
-    if 2 * DAY < delta_seconds:
-        return f"{date.month:0>2}/{date.day:0>2}/{date.year % 1000}"
-
     for time_offset in TIME_OFFSETS:
         if delta_seconds < time_offset.offset:
             return str(time_offset.date_str).format(delta_seconds if not time_offset.divider else int(delta_seconds / time_offset.divider))
+
+    return f"{date.month:0>2}/{date.day:0>2}/{date.year % 1000}"
 
 
 if __name__ == "__main__":
